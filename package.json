@@ -1,0 +1,41 @@
+{
+    "name": "@wbsapp/backend",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "start": "node app.js",
+        "lint": "eslint src/** --ext .js,.cjs",
+        "serve:development": "nodemon --experimental-specifier-resolution=node -r dotenv/config src/main.js dotenv_config_path=.env.development"
+    },
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cls-hooked": "^4.2.2",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "express-session": "^1.17.1",
+        "express-validator": "^6.10.0",
+        "jsonwebtoken": "^8.5.1",
+        "keycloak-admin": "^1.14.12",
+        "keycloak-connect": "^12.0.4",
+        "morgan": "^1.10.0",
+        "nodemailer": "^6.6.1",
+        "nodemailer-express-handlebars": "^4.0.0",
+        "on-finished": "^2.3.0",
+        "openid-client": "^4.7.4",
+        "pg": "^8.5.1",
+        "pg-hstore": "^2.3.3",
+        "sequelize": "^6.5.1",
+        "uuidv4": "^6.2.7"
+    },
+    "devDependencies": {
+        "dotenv": "^8.2.0",
+        "eslint": "^7.22.0",
+        "eslint-config-standard": "^16.0.2",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^4.3.1",
+        "nodemon": "^2.0.7",
+        "sequelize-cli": "^6.2.0"
+    }
+}
